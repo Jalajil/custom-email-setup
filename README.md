@@ -167,7 +167,7 @@ Now you can compose emails in Gmail and choose your custom domain address in the
 1. Repeat sections **1.1**, **1.4**, and **1.6** for the new domain
 2. If the new address should go to a different Gmail, also add it to `EMAIL_MAP` in `src/email-routes.ts`
 3. Repeat sections **2.1**, **2.2**, and **2.3** to set up Resend and Gmail "Send As" for the new domain
-   - Resend only provides 1 free domain per account — you can create a new Resend account for each additional domain
+   - Resend only provides 1 free domain per account, you can create a new Resend account for each additional domain
    - If using a second Resend account, the **Auto configure** step will link to your existing Cloudflare account
 
 ## Credits
