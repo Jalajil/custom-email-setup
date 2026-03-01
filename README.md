@@ -2,8 +2,6 @@
 
 Use a custom email address (e.g. `anything@yourdomain.com`) to both receive and send emails through your Gmail inbox — without SPF/DKIM failures, spam issues, or "Unverified" labels.
 
-<br>
-
 # Part 1 — Receiving Emails (Cloudflare Worker)
 
 Receive emails sent to your custom email address(es) from any email provider (Gmail, Outlook, etc.) directly in your Gmail inbox. This uses my custom **cloudflare-email-relay** Worker included in this repo.
@@ -114,8 +112,6 @@ If the setup above didn't work you can also create a Gmail filter to prevent thi
 4. Check **Never send it to Spam**
 5. Click **Create filter**
 
-<br>
-
 # Part 2 — Sending Emails (Resend)
 
 Send emails from your custom email address to any recipient (Gmail, Outlook, etc.) without getting an "Unverified" label. This part does not use the Worker, it uses [Resend](https://resend.com) as an SMTP relay through Gmail's "Send As" feature.
@@ -152,8 +148,6 @@ Send emails from your custom email address to any recipient (Gmail, Outlook, etc
 
 Now you can compose emails in Gmail and choose your custom domain address in the **From** dropdown.
 
-<br>
-
 # Part 3 — Adding Extra Custom Email Addresses
 
 **Same domain, same Gmail:**
@@ -175,8 +169,6 @@ Now you can compose emails in Gmail and choose your custom domain address in the
 3. Repeat sections **2.1**, **2.2**, and **2.3** to set up Resend and Gmail "Send As" for the new domain
    - Resend only provides 1 free domain per account — you can create a new Resend account for each additional domain
    - If using a second Resend account, the **Auto configure** step will link to your existing Cloudflare account
-
-<br>
 
 ## Credits
 
